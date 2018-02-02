@@ -4,7 +4,7 @@
 <ul>
   <% @videos.each do |video| %>
     <li>
-      <%= video.title %>, duration <%= video.duration %>
+      <%= video.title %>, duration <%= format_duration video.duration %>
       <%= link_to "Delete", delete_video_path(video), method: :delete, data:[confirm: "Are you surce?"] %>
     </li>
   <% end %>
