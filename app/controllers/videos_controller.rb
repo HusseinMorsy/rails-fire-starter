@@ -5,6 +5,7 @@ class VideosController < ApplicationController
   end
 
   def new
+    @video = Video.new
   end
 
   def create
