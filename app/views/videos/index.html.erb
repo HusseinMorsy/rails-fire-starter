@@ -3,6 +3,9 @@
 <p><%= link_to "New video", new_video_path %></p>
 <ul>
   <% @videos.each do |video| %>
-    <li><%= video.title %>, duration <%= video.duration %></li>
+    <li>
+      <%= video.title %>, duration <%= video.duration %>
+      <%= link_to "Delete", delete_video_path(video), method: :delete, data:[confirm: "Are you surce?"] %>
+    </li>
   <% end %>
 </ul>
