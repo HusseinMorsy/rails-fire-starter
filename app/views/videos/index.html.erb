@@ -1,0 +1,7 @@
+<h2>Videos</h2>
+
+<ul>
+  <% @videos.each do |video| %>
+    <li><%= video.title %>, duration <%= video.duration %></li>
+  <% end %>
+</ul>

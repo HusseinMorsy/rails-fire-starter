@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+rails:
+  title: Ruby on Rails Intro
+  duration: 120
+
+phoenix:
+  title: Phoenix
+  duration: 100
+
+django:
+  title: Django 
+  duration: 94
