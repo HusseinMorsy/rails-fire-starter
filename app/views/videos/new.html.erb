@@ -1,0 +1,10 @@
+<h2>New Video</h2>
+<%= form_with(url: videos_path, scope: :video, local: true) do |form| %>
+  <div>
+    Title: <%= form.text_field :title %>
+  </div>
+  <div>
+    Duration: <%= form.text_field :duration %>
+  </div>
+  <%= form.submit "Create" %>
+<% end %>

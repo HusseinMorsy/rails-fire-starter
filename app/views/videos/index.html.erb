@@ -1,5 +1,6 @@
 <h2>Videos</h2>
 
+<p><%= link_to "New video", new_video_path %></p>
 <ul>
   <% @videos.each do |video| %>
     <li><%= video.title %>, duration <%= video.duration %></li>
